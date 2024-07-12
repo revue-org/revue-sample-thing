@@ -1,0 +1,18 @@
+LICENSE
+README.md
+docs
+**/tsconfig.tsbuildinfo
+**/Dockerfile
+**/docker-compose.yml
+**/node_modules
+**/dist
+.dockerignore
+.gitattributes
+.gitignore
+.github
+.git
+.gradle
+.DS_Store
+
+# Yolo
+**/yolov3/yolov3.weights

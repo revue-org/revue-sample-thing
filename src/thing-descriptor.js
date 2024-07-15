@@ -1,7 +1,8 @@
 import { config } from 'dotenv'
+
 config({ path: process.cwd() + '/.env' })
 
-const thingId = process.env.THING_ID_1;
+const thingId = process.env.THING_ID_1
 
 export const td = {
   context: ['https://www.w3.org/2022/wot/td/v1.1', {
@@ -73,6 +74,9 @@ export const td = {
         location: {
           type: 'string'
         },
+        enabled: {
+          type: 'boolean'
+        },
         capabilities: {
           type: 'array',
           items: {
@@ -90,6 +94,15 @@ export const td = {
   },
   actions: {
     toggle: {
+      input: {
+        type: 'object',
+        properties: {
+          enabled: {
+            type: 'boolean'
+          }
+        },
+        required: ['enabled']
+      },
       output: {
         type: 'string'
       },
@@ -143,10 +156,10 @@ export const td = {
       data: { type: 'object' },
       forms: [
         {
-          href: 'kafka://broker.kafka.example.com:9092/sensor1234',
+          href: 'kafka://broker.kafka.example.com:9092/measurements.sensor1234',
           subprotocol: 'kafka'
         }
       ]
     }
   }
-};
+}

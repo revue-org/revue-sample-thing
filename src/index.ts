@@ -21,12 +21,14 @@ if (KAFKA_BROKER === undefined) {
 }
 
 const httpServer = new Server({
-  port: Number(THING_PORT),
+  port: Number(THING_PORT)
+})
+/*
+* ,
   middleware: validateToken,
   security: [{
     scheme: 'bearer'
-  }]
-})
+  }]*/
 
 const servient: Servient = new Servient()
 servient.addServer(httpServer)
@@ -63,6 +65,10 @@ servient.start().then(async (WoT: any): Promise<void> => {
       producer.pause()
     }
     return status.enabled ? 'Device enabled' : 'Device disabled'
+  })
+  thing.setActionHandler('capabilities', () => {
+    console.log('Getting capabilities')
+    return status.capabilities
   })
   thing.setActionHandler('updateLocation', async (params: any) => {
     console.log('Updating location to ' + params.location)

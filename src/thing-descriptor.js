@@ -14,12 +14,11 @@ export const td = {
   title: 'Device-' + thingId,
   description: 'Thing Descriptor for a Revue Device',
   securityDefinitions: {
-    extendedBearer: {
-      scheme: 'bearer',
-      format: 'jwt'
+    nosec_sc: {
+      scheme: "nosec"
     }
   },
-  security: 'extendedBearer',
+  security: ["nosec_sc"],
   schemaDefinitions: {
     capabilities: {
       anyOf: [
@@ -80,14 +79,59 @@ export const td = {
         capabilities: {
           type: 'array',
           items: {
-            $ref: '#/schemaDefinitions/capabilities'
+            type: 'object',
+            scheme: {
+              anyOf: [
+                {
+                  type: 'object',
+                  properties: {
+                    type: {
+                      type: 'string',
+                      enum: ['sensor']
+                    },
+                    capturingInterval: {
+                      type: 'number'
+                    },
+                    measure: {
+                      type: 'object',
+                      properties: {
+                        type: {
+                          type: 'string',
+                          enum: ['temperature', 'humidity', 'pressure']
+                        },
+                        unit: {
+                          type: 'string',
+                          enum: ['celsius', 'fahrenheit', 'percentage', 'pascal', 'bar']
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  type: 'object',
+                  properties: {
+                    type: {
+                      type: 'string',
+                      enum: ['camera']
+                    },
+                    resolution: {
+                      type: 'string',
+                      enum: ['720p', '1080p', '4k']
+                    }
+                  }
+                }
+              ]
+            }
           }
         }
       },
+      observable: true,
+      readOnly: true,
       forms: [
         {
-          href: 'http://localhost:8080/properties/status',
-          contentType: 'application/json'
+          href: 'http://localhost:6001/device-thing-1/properties/status',
+          contentType: 'application/json',
+          op: ['readproperty']
         }
       ]
     }
@@ -97,11 +141,11 @@ export const td = {
       input: {
         type: 'object',
         properties: {
-          enabled: {
+          enable: {
             type: 'boolean'
           }
         },
-        required: ['enabled']
+        required: ['enable']
       },
       output: {
         type: 'string'
@@ -118,13 +162,13 @@ export const td = {
       output: {
         type: 'array',
         items: {
-          $ref: '#/schemaDefinitions/capabilities'
+          $ref: ''
         }
       },
       forms: [
         {
           op: 'invokeaction',
-          href: 'https://sensor.example.com/api/capabilities',
+          href: 'http://localhost:6001/device-thing-1/actions/capabilities',
           contentType: 'application/json'
         }
       ]
@@ -163,3 +207,11 @@ export const td = {
     }
   }
 }
+/*
+* v  securityDefinitions: {
+    bearer_sc: {
+      scheme: "bearer",
+      in: "header"
+    }
+  },
+  security: ["bearer_sc"],*/

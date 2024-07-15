@@ -1,13 +1,27 @@
-export const validateToken = (req: any, res: any, next: any) => {
-  //TODO TOKEN VALIDATION TO IMPROVE, NOT WORKING!!
-  const token = req.headers['authorization']
-  if (!token) {
-    return res.status(401).send('Access Denied: No Token Provided!')
+import http from 'http'
+
+export const validateToken = async (req: http.IncomingMessage, res: http.ServerResponse, next: () => void): Promise<void> => {
+  const authHeader = req.headers['authorization']
+  //req
+
+  console.log(req.headers['authorization'])
+  console.log("CIAO")
+  next()
+
+/*  if (!authHeader) {
+    res.statusCode = 401
+    res.setHeader('Content-Type', 'text/plain')
+    res.end('Access Denied: No Token Provided!')
+    return
   }
 
-  if (token === 'Bearer apikey-dev') {
+  const token = authHeader.split(' ')[1]
+
+  if (token === 'apikey-dev') {
     next()
   } else {
-    res.status(401).send('Access Denied: Invalid Token!')
-  }
+    res.statusCode = 401
+    res.setHeader('Content-Type', 'text/plain')
+    res.end('Access Denied: Invalid Token!')
+  }*/
 }

@@ -19,50 +19,6 @@ export const td = {
     }
   },
   security: ["nosec_sc"],
-  schemaDefinitions: {
-    capabilities: {
-      anyOf: [
-        {
-          type: 'object',
-          properties: {
-            type: {
-              type: 'string',
-              enum: ['sensor']
-            },
-            capturingInterval: {
-              type: 'number'
-            },
-            measure: {
-              type: 'object',
-              properties: {
-                type: {
-                  type: 'string',
-                  enum: ['temperature', 'humidity', 'pressure']
-                },
-                unit: {
-                  type: 'string',
-                  enum: ['celsius', 'fahrenheit', 'percentage', 'pascal', 'bar']
-                }
-              }
-            }
-          }
-        },
-        {
-          type: 'object',
-          properties: {
-            type: {
-              type: 'string',
-              enum: ['camera']
-            },
-            resolution: {
-              type: 'string',
-              enum: ['720p', '1080p', '4k']
-            }
-          }
-        }
-      ]
-    }
-  },
   properties: {
     status: {
       type: 'object',
@@ -153,43 +109,6 @@ export const td = {
       forms: [
         {
           op: 'invokeaction',
-          href: 'https://sensor.example.com/api/toggle',
-          contentType: 'application/json'
-        }
-      ]
-    },
-    capabilities: {
-      output: {
-        type: 'array',
-        items: {
-          $ref: ''
-        }
-      },
-      forms: [
-        {
-          op: 'invokeaction',
-          href: 'http://localhost:6001/device-thing-1/actions/capabilities',
-          contentType: 'application/json'
-        }
-      ]
-    },
-    updateLocation: {
-      input: {
-        type: 'object',
-        properties: {
-          location: {
-            type: 'string'
-          }
-        },
-        required: ['location']
-      },
-      output: {
-        type: 'string'
-      },
-      forms: [
-        {
-          op: 'invokeaction',
-          href: 'https://sensor.example.com/api/updateLocation',
           contentType: 'application/json'
         }
       ]
@@ -200,7 +119,7 @@ export const td = {
       data: { type: 'object' },
       forms: [
         {
-          href: 'kafka://broker.kafka.example.com:9092/measurements.sensor1234',
+          href: 'kafka://broker.kafka.example.com:9092/measurements.' + thingId,
           subprotocol: 'kafka'
         }
       ]
@@ -214,4 +133,50 @@ export const td = {
       in: "header"
     }
   },
-  security: ["bearer_sc"],*/
+  security: ["bearer_sc"],
+  *
+  * schemaDefinitions: {
+    capabilities: {
+      anyOf: [
+        {
+          type: 'object',
+          properties: {
+            type: {
+              type: 'string',
+              enum: ['sensor']
+            },
+            capturingInterval: {
+              type: 'number'
+            },
+            measure: {
+              type: 'object',
+              properties: {
+                type: {
+                  type: 'string',
+                  enum: ['temperature', 'humidity', 'pressure']
+                },
+                unit: {
+                  type: 'string',
+                  enum: ['celsius', 'fahrenheit', 'percentage', 'pascal', 'bar']
+                }
+              }
+            }
+          }
+        },
+        {
+          type: 'object',
+          properties: {
+            type: {
+              type: 'string',
+              enum: ['camera']
+            },
+            resolution: {
+              type: 'string',
+              enum: ['720p', '1080p', '4k']
+            }
+          }
+        }
+      ]
+    }
+  }
+  * */

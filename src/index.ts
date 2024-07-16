@@ -1,8 +1,8 @@
 import { Servient } from '@node-wot/core'
 import HttpServer from '@node-wot/binding-http'
-import { validateToken } from './middleware.js'
 import KafkaProducer from '@/KafkaProducer.js'
 import { td } from './thing-descriptor.js'
+import * as console from 'node:console'
 
 const Server = HttpServer.HttpServer
 
@@ -52,29 +52,28 @@ servient.start().then(async (WoT: any): Promise<void> => {
   const producer: KafkaProducer = new KafkaProducer(THING_ID, [KAFKA_BROKER])
 
   thing.setPropertyReadHandler('status', () => {
-    console.log('Current status: ', status)
+    console.log('Reading status')
     return status
   })
-  thing.setActionHandler('toggle', (): string => {
-    status.enabled = !status.enabled
+
+  thing.setActionHandler('toggle', async (params: any): Promise<string> => {
+    status.enabled = (await params.value()).enable
     if (status.enabled) {
-      console.log('Device enabled')
-      producer.resume()
+      await producer.resume()
+      console.log('Device toggled: enable')
     } else {
-      console.log('Device disabled')
-      producer.pause()
+      await producer.pause()
+      console.log('Device toggled: disable')
     }
     return status.enabled ? 'Device enabled' : 'Device disabled'
   })
-  thing.setActionHandler('capabilities', () => {
-    console.log('Getting capabilities')
-    return status.capabilities
-  })
-  thing.setActionHandler('updateLocation', async (params: any) => {
+
+/*  thing.setActionHandler('updateLocation', async (params: any): Promise<string> => {
     console.log('Updating location to ' + params.location)
     status.location = params.location
     return 'location updated to ' + params.location
-  })
+  })*/
+
   await thing.expose()
   setInterval(async (): Promise<void> => {
     const measurement = {
@@ -86,8 +85,9 @@ servient.start().then(async (WoT: any): Promise<void> => {
         value: Math.floor(Math.random() * 30)
       }
     }
-    producer.produce(`measurements.${status.id}`, measurement)
+    if (status.enabled) {
+      producer.produce(`measurements.${status.id}`, measurement)
+    }
   }, status.capabilities[0].capturingInterval)
   console.log('Thing exposed successfully')
-  // thing descriptor via http://localhost:8080/{{thing-id}}
 })

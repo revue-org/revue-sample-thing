@@ -9,7 +9,9 @@ export default class KafkaProducer {
       brokers: brokers,
       logLevel: logLevel.INFO
     })
+
     this.producer = kafka.producer({ createPartitioner: Partitioners.LegacyPartitioner })
+
     this.producer.connect().then((): void => {
       console.log('Producer connected')
     }).catch((error): void => {
@@ -30,7 +32,7 @@ export default class KafkaProducer {
         console.log('Message sent to topic: ', topic)
       })
       .catch((err): void => {
-        console.log('Error producing message: ')//, err)
+        console.log('Error producing message: ', err)
       })
   }
 

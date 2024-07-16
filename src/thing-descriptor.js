@@ -15,10 +15,10 @@ export const td = {
   description: 'Thing Descriptor for a Revue Device',
   securityDefinitions: {
     nosec_sc: {
-      scheme: "nosec"
+      scheme: 'nosec'
     }
   },
-  security: ["nosec_sc"],
+  security: ['nosec_sc'],
   properties: {
     status: {
       type: 'object',

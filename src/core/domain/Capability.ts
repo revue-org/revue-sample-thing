@@ -9,11 +9,16 @@ export enum MeasureType {
   PRESSURE = 'pressure'
 }
 
+export enum MeasureUnit {
+  CELSIUS = 'celsius',
+  PERCENT = 'percent',
+}
+
 export type Capability = SensoringCapability | VideoStreamingCapability
 
 export type SensoringCapability = {
   type: CapabilityType.SENSOR
-  capturingInterval: string
+  capturingInterval: number
   measure: {
     type: MeasureType
     unit: string

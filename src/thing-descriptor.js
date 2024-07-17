@@ -11,7 +11,7 @@ export const td = {
   }],
   id: 'urn:dev:wot:' + thingId,
   type: 'Device',
-  title: 'Device-' + thingId,
+  title: 'device',
   description: 'Thing Descriptor for a Revue Device',
   securityDefinitions: {
     nosec_sc: {
@@ -85,7 +85,7 @@ export const td = {
       readOnly: true,
       forms: [
         {
-          href: 'http://localhost:6001/device-thing-1/properties/status',
+          href: 'http://localhost:6001/device/properties/status',
           contentType: 'application/json',
           op: ['readproperty']
         }

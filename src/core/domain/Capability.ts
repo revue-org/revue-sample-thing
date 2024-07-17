@@ -11,7 +11,8 @@ export enum MeasureType {
 
 export enum MeasureUnit {
   CELSIUS = 'celsius',
-  PERCENT = 'percent',
+  PERCENTAGE = 'percentage',
+  BAR = 'bar'
 }
 
 export type Capability = SensoringCapability | VideoStreamingCapability

@@ -6,6 +6,6 @@ export const toggleHandler = async (params: any): Promise<string> => {
     return 'Device already ' + thingService.isActive() ? 'enabled' : 'disabled'
   }
   intent ? await thingService.enable() : await thingService.disable()
-  console.log('Device toggled: ' + thingService.isActive() ? 'enabled' : 'disabled')
+  console.log('Action: Device toggled: ' + thingService.isActive() ? 'enabled' : 'disabled')
   return 'Device ' + thingService.isActive() ? 'enabled' : 'disabled'
 }

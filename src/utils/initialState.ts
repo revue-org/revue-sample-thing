@@ -12,14 +12,14 @@ export const initialState: State = {
       type: MeasureType.TEMPERATURE,
       unit: MeasureUnit.CELSIUS
     }
-  },{
+  }, {
     type: CapabilityType.SENSOR,
     capturingInterval: 2500,
     measure: {
       type: MeasureType.HUMIDITY,
       unit: MeasureUnit.PERCENTAGE
     }
-  },{
+  }, {
     type: CapabilityType.SENSOR,
     capturingInterval: 2500,
     measure: {

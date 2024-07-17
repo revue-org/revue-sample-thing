@@ -28,9 +28,6 @@ export default class KafkaProducer {
         topic: topic,
         messages: [{ value: JSON.stringify(message) }]
       })
-      .then((): void => {
-        console.log('Message sent to topic: ', topic)
-      })
       .catch((err): void => {
         console.log('Error producing message: ', err)
       })

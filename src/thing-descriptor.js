@@ -85,7 +85,6 @@ export const td = {
       readOnly: true,
       forms: [
         {
-          href: 'http://localhost:6001/device/properties/status',
           contentType: 'application/json',
           op: ['readproperty']
         }
@@ -126,57 +125,3 @@ export const td = {
     }
   }
 }
-/*
-* v  securityDefinitions: {
-    bearer_sc: {
-      scheme: "bearer",
-      in: "header"
-    }
-  },
-  security: ["bearer_sc"],
-  *
-  * schemaDefinitions: {
-    capabilities: {
-      anyOf: [
-        {
-          type: 'object',
-          properties: {
-            type: {
-              type: 'string',
-              enum: ['sensor']
-            },
-            capturingInterval: {
-              type: 'number'
-            },
-            measure: {
-              type: 'object',
-              properties: {
-                type: {
-                  type: 'string',
-                  enum: ['temperature', 'humidity', 'pressure']
-                },
-                unit: {
-                  type: 'string',
-                  enum: ['celsius', 'fahrenheit', 'percentage', 'pascal', 'bar']
-                }
-              }
-            }
-          }
-        },
-        {
-          type: 'object',
-          properties: {
-            type: {
-              type: 'string',
-              enum: ['camera']
-            },
-            resolution: {
-              type: 'string',
-              enum: ['720p', '1080p', '4k']
-            }
-          }
-        }
-      ]
-    }
-  }
-  * */

@@ -72,7 +72,7 @@ export const td = {
                     },
                     resolution: {
                       type: 'string',
-                      enum: ['720p', '1080p', '4k']
+                      enum: ['576p', '720p', '1080p', '4k']
                     }
                   }
                 }

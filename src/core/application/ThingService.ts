@@ -29,7 +29,7 @@ export class ThingService {
   public async enable(): Promise<void> {
     this.state.enabled = true
     await this.producer.resume()
-    simulation.start(this.producer)
+    await simulation.start(this.producer)
   }
 
   public async disable(): Promise<void> {

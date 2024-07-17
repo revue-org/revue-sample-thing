@@ -13,7 +13,14 @@ export const THING_ID = process.env.THING_ID_1
 export const THING_PORT = process.env.THING_PORT_1
 export const THING_LOCATION = process.env.THING_LOCATION_1
 export const KAFKA_BROKER = process.env.KAFKA_BROKER
-if (THING_ID === undefined || THING_PORT === undefined || THING_LOCATION === undefined || KAFKA_BROKER === undefined) {
+export const MEDIA_SERVER_HOST = process.env.MEDIA_SERVER_HOST
+export const MEDIA_SERVER_RTSP_PORT = process.env.MEDIA_SERVER_RTSP_PORT
+if (THING_ID === undefined
+  || THING_PORT === undefined
+  || THING_LOCATION === undefined
+  || KAFKA_BROKER === undefined
+  || MEDIA_SERVER_HOST === undefined
+  || MEDIA_SERVER_RTSP_PORT === undefined) {
   console.log('Thing configuration not provided')
   process.exit(1)
 }

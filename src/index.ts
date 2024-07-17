@@ -4,7 +4,7 @@ import { td } from './thing-descriptor.js'
 import { toggleHandler } from '@/handler/actions/toggle.js'
 import { statusHandler } from '@/handler/properties/status.js'
 import { validation } from '@/utils/middleware.js'
-import { initialState } from '@/utils/initialState.js'
+import { initialState } from '@/resources/initialState.js'
 import { ThingService } from '@/core/application/ThingService.js'
 
 const Server = HttpServer.HttpServer

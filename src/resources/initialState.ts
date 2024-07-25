@@ -3,7 +3,7 @@ import { CapabilityType, MeasureType, MeasureUnit } from '@/core/domain/Capabili
 
 export const initialState: State = {
   id: process.env.THING_ID!,
-  location: process.env.THING_LOCATION_1!,
+  location: process.env.THING_LOCATION!,
   enabled: true,
   capabilities: [
     {

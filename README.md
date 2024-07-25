@@ -6,23 +6,25 @@
 
 ## Getting Started
 
-- Download the latest version from [Releases](https://github.com/revue-org/revue-sample-thing/releases)
-- Unzip the archive
-- Modify the `.env` file to fit your needs
-- Run the following command in the root directory of the project
+To set up a new thing in Revue, you can just run the following command
 
 ```bash
-./deploy-thing.sh
+docker run -d \
+  --name revue-thing \
+  --restart on-failure \
+  --network revue-network \
+  --env THING_ID=<THING_ID> \
+  --env THING_PORT=<THING_PORT> \
+  --env THING_LOCATION=<THING_LOCATION> \
+  -p <THING_PORT>:<THING_PORT> \
+  revue-thing
 ```
 
-To stop the system you can run
+where `<THING_ID>` is the ID of the thing, `<THING_PORT>` is the port on which the thing will be listening,
+and `<THING_LOCATION>` is the location of the thing.
 
-```bash
-./undeploy-thing.sh
-```
+It will pull the image from the Docker Hub and run the container with the specified configuration.
 
-Once Revue is up and running, you can access the web interface at `http://localhost:8080` and in the device section you can see the new thing added to the system.
-Moreover, you can enjoy creating new custom things and add them through the device section.
+You can create many things by running the command multiple times with different configurations.
 
-The default configuration can be found in the `.env` file and in the `resource` folder.
-
+To use the thing within Revue, refer to the [Revue README](https://github.com/revue-org/revue).

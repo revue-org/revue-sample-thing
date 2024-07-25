@@ -11,7 +11,7 @@ const Server = HttpServer.HttpServer
 
 export const THING_ID = process.env.THING_ID
 export const THING_PORT = process.env.THING_PORT
-export const THING_LOCATION = process.env.THING_LOCATION_1
+export const THING_LOCATION = process.env.THING_LOCATION
 export const KAFKA_BROKER = process.env.KAFKA_BROKER
 export const MEDIA_SERVER_HOST = process.env.MEDIA_SERVER_HOST
 export const MEDIA_SERVER_RTSP_PORT = process.env.MEDIA_SERVER_RTSP_PORT

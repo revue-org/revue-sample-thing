@@ -15,12 +15,14 @@ export const THING_LOCATION = process.env.THING_LOCATION_1
 export const KAFKA_BROKER = process.env.KAFKA_BROKER
 export const MEDIA_SERVER_HOST = process.env.MEDIA_SERVER_HOST
 export const MEDIA_SERVER_RTSP_PORT = process.env.MEDIA_SERVER_RTSP_PORT
-if (THING_ID === undefined
-  || THING_PORT === undefined
-  || THING_LOCATION === undefined
-  || KAFKA_BROKER === undefined
-  || MEDIA_SERVER_HOST === undefined
-  || MEDIA_SERVER_RTSP_PORT === undefined) {
+if (
+  THING_ID === undefined ||
+  THING_PORT === undefined ||
+  THING_LOCATION === undefined ||
+  KAFKA_BROKER === undefined ||
+  MEDIA_SERVER_HOST === undefined ||
+  MEDIA_SERVER_RTSP_PORT === undefined
+) {
   console.log('Thing configuration not provided')
   process.exit(1)
 }
@@ -28,10 +30,12 @@ if (THING_ID === undefined
 export const thingService: ThingService = new ThingService(initialState)
 
 const servient: Servient = new Servient()
-servient.addServer(new Server({
-  port: Number(THING_PORT),
-  middleware: validation
-}))
+servient.addServer(
+  new Server({
+    port: Number(THING_PORT),
+    middleware: validation
+  })
+)
 
 servient.start().then(async (WoT: any): Promise<void> => {
   const thing = await WoT.produce(td)

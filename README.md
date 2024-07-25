@@ -1,4 +1,4 @@
-# Sample Thing for Revue — a distributed real-time system for video surveillance
+# Sample Thing for Revue
 
 ## Prerequisites
 

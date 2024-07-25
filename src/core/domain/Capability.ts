@@ -30,4 +30,3 @@ export type VideoStreamingCapability = {
   type: CapabilityType.VIDEO
   resolution: string
 }
-

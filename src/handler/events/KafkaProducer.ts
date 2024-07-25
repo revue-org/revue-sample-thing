@@ -12,14 +12,17 @@ export default class KafkaProducer {
 
     this.producer = kafka.producer({ createPartitioner: Partitioners.LegacyPartitioner })
 
-    this.producer.connect().then((): void => {
-      console.log('Producer connected')
-    }).catch((error): void => {
-      console.log('Error connecting the producer: ', error)
-      setTimeout((): void => {
-        this.constructor(id, brokers)
-      }, 5000)
-    })
+    this.producer
+      .connect()
+      .then((): void => {
+        console.log('Producer connected')
+      })
+      .catch((error): void => {
+        console.log('Error connecting the producer: ', error)
+        setTimeout((): void => {
+          this.constructor(id, brokers)
+        }, 5000)
+      })
   }
 
   public produce(topic: string, message: object): void {

@@ -5,10 +5,13 @@ config({ path: process.cwd() + '/.env' })
 const thingId = process.env.THING_ID_1
 
 export const td = {
-  context: ['https://www.w3.org/2022/wot/td/v1.1', {
-    'cred': 'https://www.w3.org/2018/credentials#',
-    'sec': 'https://w3id.org/security#'
-  }],
+  context: [
+    'https://www.w3.org/2022/wot/td/v1.1',
+    {
+      cred: 'https://www.w3.org/2018/credentials#',
+      sec: 'https://w3id.org/security#'
+    }
+  ],
   id: 'urn:dev:wot:' + thingId,
   type: 'Device',
   title: 'device',

@@ -6,7 +6,7 @@ export const temperatureMeasurement = () => {
     id: { value: uuidv4() },
     timestamp: new Date(),
     type: 'measurement',
-    sourceDeviceId: process.env.THING_ID_1!,
+    sourceDeviceId: process.env.THING_ID!,
     measure: {
       type: MeasureType.TEMPERATURE,
       unit: MeasureUnit.CELSIUS
@@ -20,7 +20,7 @@ export const humidityMeasurement = () => {
     id: { value: uuidv4() },
     timestamp: new Date(),
     type: 'measurement',
-    sourceDeviceId: process.env.THING_ID_1!,
+    sourceDeviceId: process.env.THING_ID!,
     measure: {
       type: MeasureType.HUMIDITY,
       unit: MeasureUnit.PERCENTAGE
@@ -34,7 +34,7 @@ export const pressureMeasurement = () => {
     id: { value: uuidv4() },
     timestamp: new Date(),
     type: 'measurement',
-    sourceDeviceId: process.env.THING_ID_1!,
+    sourceDeviceId: process.env.THING_ID!,
     measure: {
       type: MeasureType.PRESSURE,
       unit: MeasureUnit.BAR

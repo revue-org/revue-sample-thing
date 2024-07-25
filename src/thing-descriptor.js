@@ -2,7 +2,7 @@ import { config } from 'dotenv'
 
 config({ path: process.cwd() + '/.env' })
 
-const thingId = process.env.THING_ID_1
+const thingId = process.env.THING_ID
 
 export const td = {
   context: [

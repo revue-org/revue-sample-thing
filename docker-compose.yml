@@ -1,15 +1,13 @@
 services:
 
-  revue-thing-1:
+  revue-thing:
     image: revue-thing
-    container_name: revue-thing-1
-    build:
-      context: .
-      dockerfile: ./thing/Dockerfile
+    container_name: revue-thing
+    build: .
     restart: on-failure
     environment:
-      - THING_ID=${THING_ID_1}
-      - THING_PORT=${THING_PORT_1}
+      - THING_ID=${THING_ID}
+      - THING_PORT=${THING_PORT}
     ports:
       - ${THING_PORT}:${THING_PORT}
     networks:

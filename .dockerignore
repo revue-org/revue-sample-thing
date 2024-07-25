@@ -1,11 +1,15 @@
 LICENSE
 README.md
 docs
-**/tsconfig.tsbuildinfo
-**/Dockerfile
-**/docker-compose.yml
-**/node_modules
-**/dist
+tsconfig.tsbuildinfo
+Dockerfile
+docker-compose.yml
+node_modules
+dist
+renovate.json
+.prettierrc.json
+.eslintrc.cjs
+thing.iml
 .dockerignore
 .gitattributes
 .gitignore
@@ -13,6 +17,4 @@ docs
 .git
 .gradle
 .DS_Store
-
-# Yolo
-**/yolov3/yolov3.weights
+.ides

@@ -17,7 +17,7 @@ docker run -d \
   --env THING_PORT=<THING_PORT> \
   --env THING_LOCATION=<THING_LOCATION> \
   -p <THING_PORT>:<THING_PORT> \
-  revue-thing
+  letsdothisshared/revue-thing
 ```
 
 where `<THING_ID>` is the ID of the thing, `<THING_PORT>` is the port on which the thing will be listening,

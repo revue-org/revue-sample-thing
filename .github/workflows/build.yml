@@ -1,0 +1,156 @@
+name: Revue Thing CI
+
+on:
+  push:
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os:
+          - ubuntu-24.04
+          - macos-12
+          - windows-2022
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '21'
+          cache: 'npm'
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+
+  style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm clean-install
+      - name: Check format
+        run: npm run format
+      - name: Check lint
+        run: npm run lint
+
+  compute-next-version:
+    needs:
+      - build
+      - style
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    outputs:
+      will-release: ${{ steps.compute-next-version.outputs.will-release }}
+      next-version: ${{ steps.compute-next-version.outputs.next-version }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4.1.7
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '21'
+          cache: 'npm'
+      - name: Pre-compute the next version
+        id: compute-next-version
+        uses: nicolasfara/precompute-semantic-release-version-action@2.0.1
+        with:
+          github-token: ${{ secrets.GH_TOKEN }}
+      - name: Use the next version
+        run: |
+          echo "Will release: ${{ steps.compute-next-version.outputs.will-release }}"
+          echo "The next version is ${{ steps.compute-next-version.outputs.next-version }}"
+
+  release:
+    needs:
+      - compute-next-version
+      - build-website
+    runs-on: ubuntu-latest
+    concurrency:
+      # Only one release job at a time per branch, strictly sequential.
+      group: release-${{ github.event.number || github.ref }}
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
+    if: >-
+      !github.event.repository.fork
+      && (
+        github.event_name != 'pull_request'
+        || github.event.pull_request.head.repo.full_name == github.repository
+      )
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_TOKEN }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm clean-install
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npx semantic-release
+
+  docker:
+    name: Push revue-thing image to docker hub
+    concurrency:
+      group: release-${{ github.event.number || github.ref }}-docker-thing
+    needs:
+      - compute-next-version
+      - release
+    runs-on: ubuntu-latest
+    if: >-
+      !github.event.repository.fork
+      && (
+        github.event_name != 'pull_request'
+        || github.event.pull_request.head.repo.full_name == github.repository
+      ) && fromJSON(needs.compute-next-version.outputs.will-release)
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3.2.0
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3.5.0
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3.3.0
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      - name: Build and push
+        uses: docker/build-push-action@v6.5.0
+        env:
+          releaseTag: ${{
+            fromJSON(needs.compute-next-version.outputs.will-release)
+            && needs.compute-next-version.outputs.next-version || 'ci'
+            }}
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64,linux/arm64
+          push: ${{ fromJSON(needs.compute-next-version.outputs.will-release) }}
+          tags: |
+            letsdothisshared/revue-thing:${{ env.releaseTag }}
+            letsdothisshared/revue-thing:latest

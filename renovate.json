@@ -1,6 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>revue-org/renovate-config"
+    "github>revue-org/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "description": "Release a patch release for core deps in package.json files",
+      "matchPaths": [
+        "package.json"
+      ],
+      "semanticCommitScope": "core-deps"
+    }
   ]
 }

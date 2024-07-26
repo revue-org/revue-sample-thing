@@ -78,7 +78,6 @@ jobs:
   release:
     needs:
       - compute-next-version
-      - build-website
     runs-on: ubuntu-latest
     concurrency:
       # Only one release job at a time per branch, strictly sequential.

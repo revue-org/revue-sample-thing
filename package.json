@@ -18,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mala1180/revue.git"
+    "url": "git+https://github.com/revue-org/revue-sample-thing.git"
   },
   "keywords": [],
   "author": "Mattia Matteini, Alberto Paganelli",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mala1180/revue/issues"
+    "url": "https://github.com/revue-org/revue-sample-thing/issues"
   },
-  "homepage": "https://github.com/Mala1180/revue#readme",
+  "homepage": "https://github.com/revue-org/revue-sample-thing#readme",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@node-wot/binding-http": "^0.8.14",

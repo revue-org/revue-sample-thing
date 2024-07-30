@@ -1,3 +1,29 @@
+## [1.0.3](https://github.com/revue-org/revue-sample-thing/compare/v1.0.2...v1.0.3) (2024-07-30)
+
+### Dependency updates
+
+* **core-deps:** update dependency @rushstack/eslint-patch to v1.10.4 ([c11054c](https://github.com/revue-org/revue-sample-thing/commit/c11054cf36deafabc119490b215b807ca7d2c4b5))
+
+### Build and continuous integration
+
+* **deps:** update docker/setup-buildx-action action to v3.6.1 ([5586c9e](https://github.com/revue-org/revue-sample-thing/commit/5586c9e1212782a709d2ebf809ac498f77a43000))
+
+
+## [1.0.3](https://github.com/revue-org/revue-sample-thing/compare/v1.0.2...v1.0.3) (2024-07-30)
+
+## [1.0.3](https://github.com/revue-org/revue-sample-thing/compare/v1.0.2...v1.0.3) (2024-07-30)
+
+### Dependency updates
+
+* **core-deps:** update dependency @rushstack/eslint-patch to v1.10.4 ([c11054c](https://github.com/revue-org/revue-sample-thing/commit/c11054cf36deafabc119490b215b807ca7d2c4b5))
+
+### Build and continuous integration
+
+* **deps:** update docker/setup-buildx-action action to v3.6.1 ([5586c9e](https://github.com/revue-org/revue-sample-thing/commit/5586c9e1212782a709d2ebf809ac498f77a43000))
+
+
+## [1.0.3](https://github.com/revue-org/revue-sample-thing/compare/v1.0.2...v1.0.3) (2024-07-30)
+
 ## [1.0.2](https://github.com/revue-org/revue-sample-thing/compare/v1.0.1...v1.0.2) (2024-07-28)
 
 ### Dependency updates

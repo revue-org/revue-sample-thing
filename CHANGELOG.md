@@ -1,3 +1,29 @@
+## [1.1.0](https://github.com/revue-org/revue-sample-thing/compare/v1.0.5...v1.1.0) (2024-07-31)
+
+### Features
+
+* enable thing for multiple brokers ([90ab6ec](https://github.com/revue-org/revue-sample-thing/commit/90ab6ecd2f684f2d1a3d032b413e70469956842b))
+
+
+## [1.1.0](https://github.com/revue-org/revue-sample-thing/compare/v1.0.5...v1.1.0) (2024-07-31)
+
+### Features
+
+* enable thing for multiple brokers ([90ab6ec](https://github.com/revue-org/revue-sample-thing/commit/90ab6ecd2f684f2d1a3d032b413e70469956842b))
+
+## [1.1.0](https://github.com/revue-org/revue-sample-thing/compare/v1.0.5...v1.1.0) (2024-07-31)
+
+### Features
+
+* enable thing for multiple brokers ([90ab6ec](https://github.com/revue-org/revue-sample-thing/commit/90ab6ecd2f684f2d1a3d032b413e70469956842b))
+
+
+## [1.1.0](https://github.com/revue-org/revue-sample-thing/compare/v1.0.5...v1.1.0) (2024-07-31)
+
+### Features
+
+* enable thing for multiple brokers ([90ab6ec](https://github.com/revue-org/revue-sample-thing/commit/90ab6ecd2f684f2d1a3d032b413e70469956842b))
+
 ## [1.0.5](https://github.com/revue-org/revue-sample-thing/compare/v1.0.4...v1.0.5) (2024-07-31)
 
 ### Dependency updates

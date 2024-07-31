@@ -16,6 +16,10 @@ docker run -d \
   --env THING_ID=<THING_ID> \
   --env THING_PORT=<THING_PORT> \
   --env THING_LOCATION=<THING_LOCATION> \
+  --env KAFKA_HOST_1=localhost \
+  --env KAFKA_PORT_1=9094 \
+  --env KAFKA_HOST_2=localhost \
+  --env KAFKA_PORT_2=9095 \
   -p <THING_PORT>:<THING_PORT> \
   letsdothisshared/revue-thing
 ```

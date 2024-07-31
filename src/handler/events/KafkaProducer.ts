@@ -1,12 +1,13 @@
 import { Kafka, logLevel, Partitioners, Producer } from 'kafkajs'
+import { KafkaBroker } from '@/handler/events/KafkaOptions'
 
 export default class KafkaProducer {
   private readonly producer: Producer
 
-  constructor(id: string, brokers: string[]) {
+  constructor(id: string, brokers: KafkaBroker[]) {
     const kafka: Kafka = new Kafka({
       clientId: id,
-      brokers: brokers,
+      brokers: brokers.map(broker => `${broker.host}:${broker.port}`),
       logLevel: logLevel.INFO
     })
 

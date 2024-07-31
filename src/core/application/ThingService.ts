@@ -1,6 +1,6 @@
 import { State } from '@/core/domain/State.js'
 import KafkaProducer from '@/handler/events/KafkaProducer.js'
-import { KAFKA_BROKER } from '@/index.js'
+import { getBrokersFromEnv, KafkaBroker } from '@/handler/events/KafkaOptions.js'
 import { simulation } from '@/handler/events/Simulation.js'
 
 export class ThingService {
@@ -9,7 +9,9 @@ export class ThingService {
 
   constructor(state: State) {
     this.state = state
-    this.producer = new KafkaProducer(state.id, [KAFKA_BROKER!])
+    const brokers: KafkaBroker[] = getBrokersFromEnv()
+    console.log(brokers)
+    this.producer = new KafkaProducer(state.id, brokers)
   }
 
   public getState(): State {

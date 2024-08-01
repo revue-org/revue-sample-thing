@@ -1,3 +1,21 @@
+## [1.1.3](https://github.com/revue-org/revue-sample-thing/compare/v1.1.2...v1.1.3) (2024-08-01)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/fluent-ffmpeg to v2.1.25 ([72f13fa](https://github.com/revue-org/revue-sample-thing/commit/72f13fa17553e4b7946970969bbedfbbd46d9874))
+
+
+## [1.1.3](https://github.com/revue-org/revue-sample-thing/compare/v1.1.2...v1.1.3) (2024-08-01)
+
+## [1.1.3](https://github.com/revue-org/revue-sample-thing/compare/v1.1.2...v1.1.3) (2024-08-01)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/fluent-ffmpeg to v2.1.25 ([72f13fa](https://github.com/revue-org/revue-sample-thing/commit/72f13fa17553e4b7946970969bbedfbbd46d9874))
+
+
+## [1.1.3](https://github.com/revue-org/revue-sample-thing/compare/v1.1.2...v1.1.3) (2024-08-01)
+
 ## [1.1.2](https://github.com/revue-org/revue-sample-thing/compare/v1.1.1...v1.1.2) (2024-08-01)
 
 ### Dependency updates

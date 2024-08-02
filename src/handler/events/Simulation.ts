@@ -42,7 +42,7 @@ class Simulation {
     //command line corresponding command:
     //ffmpeg -re -stream_loop -1 -i path-to-video.mp4 -c:v libx264 -bf 0 -f rtsp -rtsp_transport tcp rtsp://localhost:8554/${THING_ID}/stream
     this.ffmpegProcess = ffmpeg()
-      .input(path.resolve(`src/resources/${inputFilePath}`))
+      .input(path.resolve(`dist/src/resources/${inputFilePath}`))
       .inputFormat('mp4')
       .inputOptions(['-re', '-stream_loop', '-1'])
       .videoCodec('libx264')

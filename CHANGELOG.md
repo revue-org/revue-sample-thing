@@ -1,3 +1,21 @@
+## [1.1.4](https://github.com/revue-org/revue-sample-thing/compare/v1.1.3...v1.1.4) (2024-08-02)
+
+### Dependency updates
+
+* **core-deps:** update dependency @typescript-eslint/eslint-plugin to v7.18.0 ([10e4e10](https://github.com/revue-org/revue-sample-thing/commit/10e4e10150f3ba5ed7bef67712a5b28b77ef5678))
+
+
+## [1.1.4](https://github.com/revue-org/revue-sample-thing/compare/v1.1.3...v1.1.4) (2024-08-02)
+
+## [1.1.4](https://github.com/revue-org/revue-sample-thing/compare/v1.1.3...v1.1.4) (2024-08-02)
+
+### Dependency updates
+
+* **core-deps:** update dependency @typescript-eslint/eslint-plugin to v7.18.0 ([10e4e10](https://github.com/revue-org/revue-sample-thing/commit/10e4e10150f3ba5ed7bef67712a5b28b77ef5678))
+
+
+## [1.1.4](https://github.com/revue-org/revue-sample-thing/compare/v1.1.3...v1.1.4) (2024-08-02)
+
 ## [1.1.3](https://github.com/revue-org/revue-sample-thing/compare/v1.1.2...v1.1.3) (2024-08-01)
 
 ### Dependency updates

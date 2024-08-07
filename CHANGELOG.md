@@ -1,3 +1,29 @@
+## [1.1.6](https://github.com/revue-org/revue-sample-thing/compare/v1.1.5...v1.1.6) (2024-08-07)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/node to v20.14.14 ([8a48d3e](https://github.com/revue-org/revue-sample-thing/commit/8a48d3eac865258a9615ac201b032efe249e8e34))
+
+### Build and continuous integration
+
+* **deps:** update docker/build-push-action action to v6.6.0 ([3bf13c5](https://github.com/revue-org/revue-sample-thing/commit/3bf13c5cd071f5aed55ae51e5eaf47222f732cdf))
+
+
+## [1.1.6](https://github.com/revue-org/revue-sample-thing/compare/v1.1.5...v1.1.6) (2024-08-07)
+
+## [1.1.6](https://github.com/revue-org/revue-sample-thing/compare/v1.1.5...v1.1.6) (2024-08-07)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/node to v20.14.14 ([8a48d3e](https://github.com/revue-org/revue-sample-thing/commit/8a48d3eac865258a9615ac201b032efe249e8e34))
+
+### Build and continuous integration
+
+* **deps:** update docker/build-push-action action to v6.6.0 ([3bf13c5](https://github.com/revue-org/revue-sample-thing/commit/3bf13c5cd071f5aed55ae51e5eaf47222f732cdf))
+
+
+## [1.1.6](https://github.com/revue-org/revue-sample-thing/compare/v1.1.5...v1.1.6) (2024-08-07)
+
 ## [1.1.5](https://github.com/revue-org/revue-sample-thing/compare/v1.1.4...v1.1.5) (2024-08-04)
 
 ### Dependency updates

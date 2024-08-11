@@ -1,3 +1,21 @@
+## [1.1.8](https://github.com/revue-org/revue-sample-thing/compare/v1.1.7...v1.1.8) (2024-08-11)
+
+### Dependency updates
+
+* **core-deps:** update dependency @node-wot/binding-http to v0.8.15 ([e774c2c](https://github.com/revue-org/revue-sample-thing/commit/e774c2c65b213996eaf40c5bd886a287eebd3354))
+
+
+## [1.1.8](https://github.com/revue-org/revue-sample-thing/compare/v1.1.7...v1.1.8) (2024-08-11)
+
+## [1.1.8](https://github.com/revue-org/revue-sample-thing/compare/v1.1.7...v1.1.8) (2024-08-11)
+
+### Dependency updates
+
+* **core-deps:** update dependency @node-wot/binding-http to v0.8.15 ([e774c2c](https://github.com/revue-org/revue-sample-thing/commit/e774c2c65b213996eaf40c5bd886a287eebd3354))
+
+
+## [1.1.8](https://github.com/revue-org/revue-sample-thing/compare/v1.1.7...v1.1.8) (2024-08-11)
+
 ## [1.1.7](https://github.com/revue-org/revue-sample-thing/compare/v1.1.6...v1.1.7) (2024-08-10)
 
 ### Dependency updates

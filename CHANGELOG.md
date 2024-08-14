@@ -1,3 +1,29 @@
+## [1.1.10](https://github.com/revue-org/revue-sample-thing/compare/v1.1.9...v1.1.10) (2024-08-14)
+
+### Dependency updates
+
+* **core-deps:** update dependency axios to v1.7.4 [security] ([85e3392](https://github.com/revue-org/revue-sample-thing/commit/85e33922bb9c02b56b24ae53841d772eb92e64da))
+
+### Build and continuous integration
+
+* **deps:** update docker/build-push-action action to v6.7.0 ([7811d06](https://github.com/revue-org/revue-sample-thing/commit/7811d06b4c9d0f3c486dcb82f1e288c89cb5da09))
+
+
+## [1.1.10](https://github.com/revue-org/revue-sample-thing/compare/v1.1.9...v1.1.10) (2024-08-14)
+
+## [1.1.10](https://github.com/revue-org/revue-sample-thing/compare/v1.1.9...v1.1.10) (2024-08-14)
+
+### Dependency updates
+
+* **core-deps:** update dependency axios to v1.7.4 [security] ([85e3392](https://github.com/revue-org/revue-sample-thing/commit/85e33922bb9c02b56b24ae53841d772eb92e64da))
+
+### Build and continuous integration
+
+* **deps:** update docker/build-push-action action to v6.7.0 ([7811d06](https://github.com/revue-org/revue-sample-thing/commit/7811d06b4c9d0f3c486dcb82f1e288c89cb5da09))
+
+
+## [1.1.10](https://github.com/revue-org/revue-sample-thing/compare/v1.1.9...v1.1.10) (2024-08-14)
+
 ## [1.1.9](https://github.com/revue-org/revue-sample-thing/compare/v1.1.8...v1.1.9) (2024-08-12)
 
 ### Dependency updates

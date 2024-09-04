@@ -1,3 +1,21 @@
+## [1.1.26](https://github.com/revue-org/revue-sample-thing/compare/v1.1.25...v1.1.26) (2024-09-04)
+
+### Dependency updates
+
+* **core-deps:** update dependency axios to v1.7.7 ([44f6f52](https://github.com/revue-org/revue-sample-thing/commit/44f6f528090a314114bc87b41e144f5225a9659b))
+
+
+## [1.1.26](https://github.com/revue-org/revue-sample-thing/compare/v1.1.25...v1.1.26) (2024-09-04)
+
+## [1.1.26](https://github.com/revue-org/revue-sample-thing/compare/v1.1.25...v1.1.26) (2024-09-04)
+
+### Dependency updates
+
+* **core-deps:** update dependency axios to v1.7.7 ([44f6f52](https://github.com/revue-org/revue-sample-thing/commit/44f6f528090a314114bc87b41e144f5225a9659b))
+
+
+## [1.1.26](https://github.com/revue-org/revue-sample-thing/compare/v1.1.25...v1.1.26) (2024-09-04)
+
 ## [1.1.25](https://github.com/revue-org/revue-sample-thing/compare/v1.1.24...v1.1.25) (2024-09-03)
 
 ### Dependency updates

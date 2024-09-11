@@ -1,3 +1,21 @@
+## [1.1.34](https://github.com/revue-org/revue-sample-thing/compare/v1.1.33...v1.1.34) (2024-09-11)
+
+### Dependency updates
+
+* **core-deps:** update dependency express to v4.20.0 [security] ([f776329](https://github.com/revue-org/revue-sample-thing/commit/f7763290d538c3143d4ca066c5266ab4fba5215c))
+
+
+## [1.1.34](https://github.com/revue-org/revue-sample-thing/compare/v1.1.33...v1.1.34) (2024-09-11)
+
+## [1.1.34](https://github.com/revue-org/revue-sample-thing/compare/v1.1.33...v1.1.34) (2024-09-11)
+
+### Dependency updates
+
+* **core-deps:** update dependency express to v4.20.0 [security] ([f776329](https://github.com/revue-org/revue-sample-thing/commit/f7763290d538c3143d4ca066c5266ab4fba5215c))
+
+
+## [1.1.34](https://github.com/revue-org/revue-sample-thing/compare/v1.1.33...v1.1.34) (2024-09-11)
+
 ## [1.1.33](https://github.com/revue-org/revue-sample-thing/compare/v1.1.32...v1.1.33) (2024-09-10)
 
 ### Dependency updates

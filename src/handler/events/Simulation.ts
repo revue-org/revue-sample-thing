@@ -7,6 +7,9 @@ import {
   temperatureMeasurement
 } from '@/resources/sampleMeasurements.js'
 import path from 'path'
+
+import { spawn } from 'node:child_process'
+
 import ffmpeg, { FfmpegCommand } from 'fluent-ffmpeg'
 import ffmpegInstaller from '@ffmpeg-installer/ffmpeg'
 
@@ -18,8 +21,12 @@ class Simulation {
     console.log('Simulation started')
     this.interval = setInterval(
       async (): Promise<void> => {
-        producer.produce(`measurements.${thingService.getId()}`, temperatureMeasurement())
-        producer.produce(`measurements.${thingService.getId()}`, humidityMeasurement())
+        const temperature = await temperatureMeasurement()
+        const humidity = await humidityMeasurement()
+        console.log(temperature)
+        console.log(humidity)
+        producer.produce(`measurements.${thingService.getId()}`, temperature)
+        producer.produce(`measurements.${thingService.getId()}`, humidity)
         producer.produce(`measurements.${thingService.getId()}`, pressureMeasurement())
       },
       (thingService.getState().capabilities[0] as SensoringCapability).capturingInterval
@@ -39,31 +46,37 @@ class Simulation {
     const inputFilePath: string = 'video.mp4'
     const rtspStreamUrl: string = `rtsp://${MEDIA_SERVER_HOST}:${MEDIA_SERVER_RTSP_PORT}/${THING_ID}/stream`
 
+    const video = spawn("rpicam-vid", ["-t", "0", "--flush", "1", "--bitrate", "2000000", "-g", "50", "--inline", "-o", "-"])
+    if (video.stdout && video.stderr) {
+      video.stderr.on("data", (chunck) => {
+        // console.log(chunck)
+      })
+      this.ffmpegProcess = ffmpeg(video.stdout)
+        .inputFormat('h264')
+        .inputOptions(['-re'])
+        .addOption("-c:v", "libx264")
+        .addOption('-bf', '0')
+        .addOption('-strict', 'experimental')
+        .outputFormat('rtsp')
+        .outputOptions(['-rtsp_transport tcp'])
+        .output(rtspStreamUrl)
+        .on('start', (commandLine) => {
+          console.log(`Event: Video conversion and publishing started at RTSP Stream URL: ${rtspStreamUrl}`)
+          console.log(`FFmpeg command: ${commandLine}`)
+        })
+        .on('end', () => {
+          console.log('Video conversion and publishing ended')
+        })
+        .on('error', (err, stdout, stderr): void => {
+          if (err) {
+            console.log('stdout:\n' + stdout)
+            console.log('stderr:\n' + stderr)
+          }
+        })
+      this.ffmpegProcess.run()
+    }
     //command line corresponding command:
     //ffmpeg -re -stream_loop -1 -i path-to-video.mp4 -c:v libx264 -bf 0 -f rtsp -rtsp_transport tcp rtsp://localhost:8554/${THING_ID}/stream
-    this.ffmpegProcess = ffmpeg()
-      .input(path.resolve(`src/resources/${inputFilePath}`))
-      .inputFormat('mp4')
-      .inputOptions(['-re', '-stream_loop', '-1'])
-      .videoCodec('libx264')
-      .addOption('-bf', '0')
-      .outputFormat('rtsp')
-      .outputOptions(['-rtsp_transport tcp'])
-      .output(rtspStreamUrl)
-      .on('start', () => {
-        console.log(`Event: Video conversion and publishing started at RTSP Stream URL: ${rtspStreamUrl}`)
-      })
-      .on('end', () => {
-        console.log('Video conversion and publishing ended')
-      })
-      .on('error', (err, stdout, stderr): void => {
-        if (err) {
-          console.log('stdout:\n' + stdout)
-          console.log('stderr:\n' + stderr)
-        }
-      })
-
-    this.ffmpegProcess.run()
   }
 }
 

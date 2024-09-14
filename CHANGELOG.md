@@ -1,3 +1,23 @@
+## [1.1.37](https://github.com/revue-org/revue-sample-thing/compare/v1.1.36...v1.1.37) (2024-09-14)
+
+### Dependency updates
+
+* **core-deps:** update dependency vite to v5.4.4 ([8a91d34](https://github.com/revue-org/revue-sample-thing/commit/8a91d3453315cf2d17e1341c969428e22a53f1d8))
+* **deps:** update docker/dockerfile docker tag to v1.10 ([bb71a50](https://github.com/revue-org/revue-sample-thing/commit/bb71a50cc2ebb3b58d88d64da73227c7e2bda55c))
+
+
+## [1.1.37](https://github.com/revue-org/revue-sample-thing/compare/v1.1.36...v1.1.37) (2024-09-14)
+
+## [1.1.37](https://github.com/revue-org/revue-sample-thing/compare/v1.1.36...v1.1.37) (2024-09-14)
+
+### Dependency updates
+
+* **core-deps:** update dependency vite to v5.4.4 ([8a91d34](https://github.com/revue-org/revue-sample-thing/commit/8a91d3453315cf2d17e1341c969428e22a53f1d8))
+* **deps:** update docker/dockerfile docker tag to v1.10 ([bb71a50](https://github.com/revue-org/revue-sample-thing/commit/bb71a50cc2ebb3b58d88d64da73227c7e2bda55c))
+
+
+## [1.1.37](https://github.com/revue-org/revue-sample-thing/compare/v1.1.36...v1.1.37) (2024-09-14)
+
 ## [1.1.36](https://github.com/revue-org/revue-sample-thing/compare/v1.1.35...v1.1.36) (2024-09-12)
 
 ### Dependency updates

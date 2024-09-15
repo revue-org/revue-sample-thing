@@ -1,3 +1,21 @@
+## [1.1.38](https://github.com/revue-org/revue-sample-thing/compare/v1.1.37...v1.1.38) (2024-09-15)
+
+### Dependency updates
+
+* **core-deps:** update dependency express to v4.21.0 ([589f09f](https://github.com/revue-org/revue-sample-thing/commit/589f09f43a576b2a54e8f6c8b64e21470542ce5d))
+
+
+## [1.1.38](https://github.com/revue-org/revue-sample-thing/compare/v1.1.37...v1.1.38) (2024-09-15)
+
+## [1.1.38](https://github.com/revue-org/revue-sample-thing/compare/v1.1.37...v1.1.38) (2024-09-15)
+
+### Dependency updates
+
+* **core-deps:** update dependency express to v4.21.0 ([589f09f](https://github.com/revue-org/revue-sample-thing/commit/589f09f43a576b2a54e8f6c8b64e21470542ce5d))
+
+
+## [1.1.38](https://github.com/revue-org/revue-sample-thing/compare/v1.1.37...v1.1.38) (2024-09-15)
+
 ## [1.1.37](https://github.com/revue-org/revue-sample-thing/compare/v1.1.36...v1.1.37) (2024-09-14)
 
 ### Dependency updates

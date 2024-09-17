@@ -1,3 +1,37 @@
+## [1.1.40](https://github.com/revue-org/revue-sample-thing/compare/v1.1.39...v1.1.40) (2024-09-17)
+
+### Bug Fixes
+
+* add mp4 files to dist when building ([26e83fa](https://github.com/revue-org/revue-sample-thing/commit/26e83fa5f76739fa7a9362a45221cd05ecfb8c17))
+* fix env configurations ([86fb07c](https://github.com/revue-org/revue-sample-thing/commit/86fb07cf28eeda30403bc8600e3d9a796ab3964c))
+* fix path of video to stream ([6fc7f56](https://github.com/revue-org/revue-sample-thing/commit/6fc7f565aee2c745c5f7a2f8547fd133c51ceea5))
+
+
+## [1.1.40](https://github.com/revue-org/revue-sample-thing/compare/v1.1.39...v1.1.40) (2024-09-17)
+
+### Bug Fixes
+
+* add mp4 files to dist when building ([26e83fa](https://github.com/revue-org/revue-sample-thing/commit/26e83fa5f76739fa7a9362a45221cd05ecfb8c17))
+* fix env configurations ([86fb07c](https://github.com/revue-org/revue-sample-thing/commit/86fb07cf28eeda30403bc8600e3d9a796ab3964c))
+* fix path of video to stream ([6fc7f56](https://github.com/revue-org/revue-sample-thing/commit/6fc7f565aee2c745c5f7a2f8547fd133c51ceea5))
+
+## [1.1.40](https://github.com/revue-org/revue-sample-thing/compare/v1.1.39...v1.1.40) (2024-09-17)
+
+### Bug Fixes
+
+* add mp4 files to dist when building ([26e83fa](https://github.com/revue-org/revue-sample-thing/commit/26e83fa5f76739fa7a9362a45221cd05ecfb8c17))
+* fix env configurations ([86fb07c](https://github.com/revue-org/revue-sample-thing/commit/86fb07cf28eeda30403bc8600e3d9a796ab3964c))
+* fix path of video to stream ([6fc7f56](https://github.com/revue-org/revue-sample-thing/commit/6fc7f565aee2c745c5f7a2f8547fd133c51ceea5))
+
+
+## [1.1.40](https://github.com/revue-org/revue-sample-thing/compare/v1.1.39...v1.1.40) (2024-09-17)
+
+### Bug Fixes
+
+* add mp4 files to dist when building ([26e83fa](https://github.com/revue-org/revue-sample-thing/commit/26e83fa5f76739fa7a9362a45221cd05ecfb8c17))
+* fix env configurations ([86fb07c](https://github.com/revue-org/revue-sample-thing/commit/86fb07cf28eeda30403bc8600e3d9a796ab3964c))
+* fix path of video to stream ([6fc7f56](https://github.com/revue-org/revue-sample-thing/commit/6fc7f565aee2c745c5f7a2f8547fd133c51ceea5))
+
 ## [1.1.39](https://github.com/revue-org/revue-sample-thing/compare/v1.1.38...v1.1.39) (2024-09-16)
 
 ### Dependency updates

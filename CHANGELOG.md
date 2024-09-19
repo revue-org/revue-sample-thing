@@ -1,3 +1,21 @@
+## [1.1.43](https://github.com/revue-org/revue-sample-thing/compare/v1.1.42...v1.1.43) (2024-09-19)
+
+### Dependency updates
+
+* **core-deps:** update dependency eslint to v8.57.1 ([71986e1](https://github.com/revue-org/revue-sample-thing/commit/71986e139d8c96322aa3db3cd647681dbf45b4f0))
+
+
+## [1.1.43](https://github.com/revue-org/revue-sample-thing/compare/v1.1.42...v1.1.43) (2024-09-19)
+
+## [1.1.43](https://github.com/revue-org/revue-sample-thing/compare/v1.1.42...v1.1.43) (2024-09-19)
+
+### Dependency updates
+
+* **core-deps:** update dependency eslint to v8.57.1 ([71986e1](https://github.com/revue-org/revue-sample-thing/commit/71986e139d8c96322aa3db3cd647681dbf45b4f0))
+
+
+## [1.1.43](https://github.com/revue-org/revue-sample-thing/compare/v1.1.42...v1.1.43) (2024-09-19)
+
 ## [1.1.42](https://github.com/revue-org/revue-sample-thing/compare/v1.1.41...v1.1.42) (2024-09-17)
 
 ### Dependency updates

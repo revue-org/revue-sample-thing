@@ -1,3 +1,21 @@
+## [1.1.45](https://github.com/revue-org/revue-sample-thing/compare/v1.1.44...v1.1.45) (2024-09-20)
+
+### Dependency updates
+
+* **core-deps:** update dependency nodemon to v3.1.5 ([e8069f6](https://github.com/revue-org/revue-sample-thing/commit/e8069f6106c1caf21bbd923729e54ab997db4b92))
+
+
+## [1.1.45](https://github.com/revue-org/revue-sample-thing/compare/v1.1.44...v1.1.45) (2024-09-20)
+
+## [1.1.45](https://github.com/revue-org/revue-sample-thing/compare/v1.1.44...v1.1.45) (2024-09-20)
+
+### Dependency updates
+
+* **core-deps:** update dependency nodemon to v3.1.5 ([e8069f6](https://github.com/revue-org/revue-sample-thing/commit/e8069f6106c1caf21bbd923729e54ab997db4b92))
+
+
+## [1.1.45](https://github.com/revue-org/revue-sample-thing/compare/v1.1.44...v1.1.45) (2024-09-20)
+
 ## [1.1.44](https://github.com/revue-org/revue-sample-thing/compare/v1.1.43...v1.1.44) (2024-09-20)
 
 ### Dependency updates

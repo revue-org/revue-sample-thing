@@ -1,3 +1,21 @@
+## [1.1.44](https://github.com/revue-org/revue-sample-thing/compare/v1.1.43...v1.1.44) (2024-09-20)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/jsonwebtoken to v9.0.7 ([939245a](https://github.com/revue-org/revue-sample-thing/commit/939245a95c0f60de7aee94a6f2436c9da64b6b14))
+
+
+## [1.1.44](https://github.com/revue-org/revue-sample-thing/compare/v1.1.43...v1.1.44) (2024-09-20)
+
+## [1.1.44](https://github.com/revue-org/revue-sample-thing/compare/v1.1.43...v1.1.44) (2024-09-20)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/jsonwebtoken to v9.0.7 ([939245a](https://github.com/revue-org/revue-sample-thing/commit/939245a95c0f60de7aee94a6f2436c9da64b6b14))
+
+
+## [1.1.44](https://github.com/revue-org/revue-sample-thing/compare/v1.1.43...v1.1.44) (2024-09-20)
+
 ## [1.1.43](https://github.com/revue-org/revue-sample-thing/compare/v1.1.42...v1.1.43) (2024-09-19)
 
 ### Dependency updates

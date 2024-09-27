@@ -1,3 +1,29 @@
+## [1.1.50](https://github.com/revue-org/revue-sample-thing/compare/v1.1.49...v1.1.50) (2024-09-27)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/node to v20.16.6 ([7dd9705](https://github.com/revue-org/revue-sample-thing/commit/7dd9705a8ad2dba2352a1ef39d3356fca15415ae))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.2.0 ([4072697](https://github.com/revue-org/revue-sample-thing/commit/407269798af512c60f192757ef9c44b74611efba))
+
+
+## [1.1.50](https://github.com/revue-org/revue-sample-thing/compare/v1.1.49...v1.1.50) (2024-09-27)
+
+## [1.1.50](https://github.com/revue-org/revue-sample-thing/compare/v1.1.49...v1.1.50) (2024-09-27)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/node to v20.16.6 ([7dd9705](https://github.com/revue-org/revue-sample-thing/commit/7dd9705a8ad2dba2352a1ef39d3356fca15415ae))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.2.0 ([4072697](https://github.com/revue-org/revue-sample-thing/commit/407269798af512c60f192757ef9c44b74611efba))
+
+
+## [1.1.50](https://github.com/revue-org/revue-sample-thing/compare/v1.1.49...v1.1.50) (2024-09-27)
+
 ## [1.1.49](https://github.com/revue-org/revue-sample-thing/compare/v1.1.48...v1.1.49) (2024-09-24)
 
 ### Dependency updates

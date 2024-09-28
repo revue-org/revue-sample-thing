@@ -1,3 +1,21 @@
+## [1.1.54](https://github.com/revue-org/revue-sample-thing/compare/v1.1.53...v1.1.54) (2024-09-28)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/node to v20.16.8 ([0b5b3a8](https://github.com/revue-org/revue-sample-thing/commit/0b5b3a8ed5bd562639f9cc4dd5c896bf65c563d1))
+
+
+## [1.1.54](https://github.com/revue-org/revue-sample-thing/compare/v1.1.53...v1.1.54) (2024-09-28)
+
+## [1.1.54](https://github.com/revue-org/revue-sample-thing/compare/v1.1.53...v1.1.54) (2024-09-28)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/node to v20.16.8 ([0b5b3a8](https://github.com/revue-org/revue-sample-thing/commit/0b5b3a8ed5bd562639f9cc4dd5c896bf65c563d1))
+
+
+## [1.1.54](https://github.com/revue-org/revue-sample-thing/compare/v1.1.53...v1.1.54) (2024-09-28)
+
 ## [1.1.53](https://github.com/revue-org/revue-sample-thing/compare/v1.1.52...v1.1.53) (2024-09-28)
 
 ### Dependency updates

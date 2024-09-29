@@ -1,3 +1,21 @@
+## [1.1.56](https://github.com/revue-org/revue-sample-thing/compare/v1.1.55...v1.1.56) (2024-09-29)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/express to v5 ([16f2ca7](https://github.com/revue-org/revue-sample-thing/commit/16f2ca7d714ea79c17ac1246d9cba6c58322a344))
+
+
+## [1.1.56](https://github.com/revue-org/revue-sample-thing/compare/v1.1.55...v1.1.56) (2024-09-29)
+
+## [1.1.56](https://github.com/revue-org/revue-sample-thing/compare/v1.1.55...v1.1.56) (2024-09-29)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/express to v5 ([16f2ca7](https://github.com/revue-org/revue-sample-thing/commit/16f2ca7d714ea79c17ac1246d9cba6c58322a344))
+
+
+## [1.1.56](https://github.com/revue-org/revue-sample-thing/compare/v1.1.55...v1.1.56) (2024-09-29)
+
 ## [1.1.55](https://github.com/revue-org/revue-sample-thing/compare/v1.1.54...v1.1.55) (2024-09-29)
 
 ### Dependency updates

@@ -1,3 +1,21 @@
+## [1.1.58](https://github.com/revue-org/revue-sample-thing/compare/v1.1.57...v1.1.58) (2024-10-01)
+
+### Dependency updates
+
+* **core-deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.109 ([6183562](https://github.com/revue-org/revue-sample-thing/commit/6183562ad3b523ce68a7ab4ef5b75551dffaab4e))
+
+
+## [1.1.58](https://github.com/revue-org/revue-sample-thing/compare/v1.1.57...v1.1.58) (2024-10-01)
+
+## [1.1.58](https://github.com/revue-org/revue-sample-thing/compare/v1.1.57...v1.1.58) (2024-10-01)
+
+### Dependency updates
+
+* **core-deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.109 ([6183562](https://github.com/revue-org/revue-sample-thing/commit/6183562ad3b523ce68a7ab4ef5b75551dffaab4e))
+
+
+## [1.1.58](https://github.com/revue-org/revue-sample-thing/compare/v1.1.57...v1.1.58) (2024-10-01)
+
 ## [1.1.57](https://github.com/revue-org/revue-sample-thing/compare/v1.1.56...v1.1.57) (2024-09-30)
 
 ### Dependency updates

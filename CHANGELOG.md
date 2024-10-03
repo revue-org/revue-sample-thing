@@ -1,3 +1,29 @@
+## [1.1.59](https://github.com/revue-org/revue-sample-thing/compare/v1.1.58...v1.1.59) (2024-10-03)
+
+### Dependency updates
+
+* **core-deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.110 ([5ba8ea6](https://github.com/revue-org/revue-sample-thing/commit/5ba8ea66f1794be84624a6cedfd1568979e1bfa0))
+
+### Build and continuous integration
+
+* **deps:** update docker/setup-buildx-action action to v3.7.0 ([0fa8af9](https://github.com/revue-org/revue-sample-thing/commit/0fa8af908684d7846860ccd905f995837f91bcc5))
+
+
+## [1.1.59](https://github.com/revue-org/revue-sample-thing/compare/v1.1.58...v1.1.59) (2024-10-03)
+
+## [1.1.59](https://github.com/revue-org/revue-sample-thing/compare/v1.1.58...v1.1.59) (2024-10-03)
+
+### Dependency updates
+
+* **core-deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.110 ([5ba8ea6](https://github.com/revue-org/revue-sample-thing/commit/5ba8ea66f1794be84624a6cedfd1568979e1bfa0))
+
+### Build and continuous integration
+
+* **deps:** update docker/setup-buildx-action action to v3.7.0 ([0fa8af9](https://github.com/revue-org/revue-sample-thing/commit/0fa8af908684d7846860ccd905f995837f91bcc5))
+
+
+## [1.1.59](https://github.com/revue-org/revue-sample-thing/compare/v1.1.58...v1.1.59) (2024-10-03)
+
 ## [1.1.58](https://github.com/revue-org/revue-sample-thing/compare/v1.1.57...v1.1.58) (2024-10-01)
 
 ### Dependency updates

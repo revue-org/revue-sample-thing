@@ -1,3 +1,31 @@
+## [1.1.60](https://github.com/revue-org/revue-sample-thing/compare/v1.1.59...v1.1.60) (2024-10-09)
+
+### Dependency updates
+
+* **core-deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.111 ([d60489d](https://github.com/revue-org/revue-sample-thing/commit/d60489d4fa788357416593b5baf635604ebe175b))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.2.1 ([c9318c4](https://github.com/revue-org/revue-sample-thing/commit/c9318c41eb2b0ad7f5efdeb75e597d9dd6f0854c))
+* **deps:** update docker/setup-buildx-action action to v3.7.1 ([4974fd1](https://github.com/revue-org/revue-sample-thing/commit/4974fd1dddd1352463a1b2ae8c78a81f76b4bd30))
+
+
+## [1.1.60](https://github.com/revue-org/revue-sample-thing/compare/v1.1.59...v1.1.60) (2024-10-09)
+
+## [1.1.60](https://github.com/revue-org/revue-sample-thing/compare/v1.1.59...v1.1.60) (2024-10-09)
+
+### Dependency updates
+
+* **core-deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.111 ([d60489d](https://github.com/revue-org/revue-sample-thing/commit/d60489d4fa788357416593b5baf635604ebe175b))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.2.1 ([c9318c4](https://github.com/revue-org/revue-sample-thing/commit/c9318c41eb2b0ad7f5efdeb75e597d9dd6f0854c))
+* **deps:** update docker/setup-buildx-action action to v3.7.1 ([4974fd1](https://github.com/revue-org/revue-sample-thing/commit/4974fd1dddd1352463a1b2ae8c78a81f76b4bd30))
+
+
+## [1.1.60](https://github.com/revue-org/revue-sample-thing/compare/v1.1.59...v1.1.60) (2024-10-09)
+
 ## [1.1.59](https://github.com/revue-org/revue-sample-thing/compare/v1.1.58...v1.1.59) (2024-10-03)
 
 ### Dependency updates

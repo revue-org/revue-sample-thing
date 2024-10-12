@@ -1,3 +1,21 @@
+## [1.1.63](https://github.com/revue-org/revue-sample-thing/compare/v1.1.62...v1.1.63) (2024-10-12)
+
+### Dependency updates
+
+* **core-deps:** update dependency typescript to v5.6.3 ([3e2c997](https://github.com/revue-org/revue-sample-thing/commit/3e2c997bcec28a1dac0fcba18cbcbe9c06642d26))
+
+
+## [1.1.63](https://github.com/revue-org/revue-sample-thing/compare/v1.1.62...v1.1.63) (2024-10-12)
+
+## [1.1.63](https://github.com/revue-org/revue-sample-thing/compare/v1.1.62...v1.1.63) (2024-10-12)
+
+### Dependency updates
+
+* **core-deps:** update dependency typescript to v5.6.3 ([3e2c997](https://github.com/revue-org/revue-sample-thing/commit/3e2c997bcec28a1dac0fcba18cbcbe9c06642d26))
+
+
+## [1.1.63](https://github.com/revue-org/revue-sample-thing/compare/v1.1.62...v1.1.63) (2024-10-12)
+
 ## [1.1.62](https://github.com/revue-org/revue-sample-thing/compare/v1.1.61...v1.1.62) (2024-10-11)
 
 ### Dependency updates

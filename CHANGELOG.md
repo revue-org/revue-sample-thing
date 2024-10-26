@@ -1,3 +1,21 @@
+## [1.1.69](https://github.com/revue-org/revue-sample-thing/compare/v1.1.68...v1.1.69) (2024-10-26)
+
+### Dependency updates
+
+* **core-deps:** update dependency vite to v5.4.10 ([01fb046](https://github.com/revue-org/revue-sample-thing/commit/01fb0466be3f38f5bb5215adb6bb65d7519744ef))
+
+
+## [1.1.69](https://github.com/revue-org/revue-sample-thing/compare/v1.1.68...v1.1.69) (2024-10-26)
+
+## [1.1.69](https://github.com/revue-org/revue-sample-thing/compare/v1.1.68...v1.1.69) (2024-10-26)
+
+### Dependency updates
+
+* **core-deps:** update dependency vite to v5.4.10 ([01fb046](https://github.com/revue-org/revue-sample-thing/commit/01fb0466be3f38f5bb5215adb6bb65d7519744ef))
+
+
+## [1.1.69](https://github.com/revue-org/revue-sample-thing/compare/v1.1.68...v1.1.69) (2024-10-26)
+
 ## [1.1.68](https://github.com/revue-org/revue-sample-thing/compare/v1.1.67...v1.1.68) (2024-10-25)
 
 ### Dependency updates

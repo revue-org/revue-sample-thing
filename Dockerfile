@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.10
 
-FROM node:20-alpine as build
+FROM node:22-alpine as build
 LABEL maintainer="matteinimattia@gmail.com, kelvin.olaiya15@gmail.com, albi1600@gmail.com"
 
 # Move to the directory where the application will be built
@@ -15,7 +15,7 @@ RUN npm install --save-prod
 RUN npm run build
 
 
-FROM node:20-alpine as production
+FROM node:22-alpine as production
 LABEL maintainer="matteinimattia@gmail.com, kelvin.olaiya15@gmail.com, albi1600@gmail.com"
 
 WORKDIR /home/revue-sample-thing

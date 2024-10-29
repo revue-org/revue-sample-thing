@@ -1,3 +1,23 @@
+## [1.1.73](https://github.com/revue-org/revue-sample-thing/compare/v1.1.72...v1.1.73) (2024-10-29)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/fluent-ffmpeg to v2.1.27 ([1f6cd60](https://github.com/revue-org/revue-sample-thing/commit/1f6cd605ba137d767d8e644ec5f3c849a059b762))
+* **deps:** update node.js to v22 ([3fc59b1](https://github.com/revue-org/revue-sample-thing/commit/3fc59b116633877f1f50bed2ff4c0029e483bc3d))
+
+
+## [1.1.73](https://github.com/revue-org/revue-sample-thing/compare/v1.1.72...v1.1.73) (2024-10-29)
+
+## [1.1.73](https://github.com/revue-org/revue-sample-thing/compare/v1.1.72...v1.1.73) (2024-10-29)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/fluent-ffmpeg to v2.1.27 ([1f6cd60](https://github.com/revue-org/revue-sample-thing/commit/1f6cd605ba137d767d8e644ec5f3c849a059b762))
+* **deps:** update node.js to v22 ([3fc59b1](https://github.com/revue-org/revue-sample-thing/commit/3fc59b116633877f1f50bed2ff4c0029e483bc3d))
+
+
+## [1.1.73](https://github.com/revue-org/revue-sample-thing/compare/v1.1.72...v1.1.73) (2024-10-29)
+
 ## [1.1.72](https://github.com/revue-org/revue-sample-thing/compare/v1.1.71...v1.1.72) (2024-10-28)
 
 ### Dependency updates

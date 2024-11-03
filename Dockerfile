@@ -1,4 +1,4 @@
-# syntax = docker/dockerfile:1.10
+# syntax = docker/dockerfile:1.11
 
 FROM node:22-alpine as build
 LABEL maintainer="matteinimattia@gmail.com, kelvin.olaiya15@gmail.com, albi1600@gmail.com"

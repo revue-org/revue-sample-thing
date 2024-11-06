@@ -1,3 +1,29 @@
+## [1.1.80](https://github.com/revue-org/revue-sample-thing/compare/v1.1.79...v1.1.80) (2024-11-06)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/node to v22.8.7 ([16af512](https://github.com/revue-org/revue-sample-thing/commit/16af5126f9133024cb7ab5af30e21966dce6d61f))
+
+### Build and continuous integration
+
+* **deps:** update nicolasfara/precompute-semantic-release-version-action action to v2.0.2 ([f94b06a](https://github.com/revue-org/revue-sample-thing/commit/f94b06a1a71bebe763afabd787a03812775eb291))
+
+
+## [1.1.80](https://github.com/revue-org/revue-sample-thing/compare/v1.1.79...v1.1.80) (2024-11-06)
+
+## [1.1.80](https://github.com/revue-org/revue-sample-thing/compare/v1.1.79...v1.1.80) (2024-11-06)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/node to v22.8.7 ([16af512](https://github.com/revue-org/revue-sample-thing/commit/16af5126f9133024cb7ab5af30e21966dce6d61f))
+
+### Build and continuous integration
+
+* **deps:** update nicolasfara/precompute-semantic-release-version-action action to v2.0.2 ([f94b06a](https://github.com/revue-org/revue-sample-thing/commit/f94b06a1a71bebe763afabd787a03812775eb291))
+
+
+## [1.1.80](https://github.com/revue-org/revue-sample-thing/compare/v1.1.79...v1.1.80) (2024-11-06)
+
 ## [1.1.79](https://github.com/revue-org/revue-sample-thing/compare/v1.1.78...v1.1.79) (2024-11-04)
 
 ### Dependency updates

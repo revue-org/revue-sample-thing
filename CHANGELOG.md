@@ -1,3 +1,21 @@
+## [1.1.83](https://github.com/revue-org/revue-sample-thing/compare/v1.1.82...v1.1.83) (2024-11-14)
+
+### Dependency updates
+
+* **core-deps:** update dependency uuid to v11.0.3 ([#119](https://github.com/revue-org/revue-sample-thing/issues/119)) ([5ce4493](https://github.com/revue-org/revue-sample-thing/commit/5ce449308c6eaf37c490a76ba6737a4fa66d40fd))
+
+
+## [1.1.83](https://github.com/revue-org/revue-sample-thing/compare/v1.1.82...v1.1.83) (2024-11-14)
+
+## [1.1.83](https://github.com/revue-org/revue-sample-thing/compare/v1.1.82...v1.1.83) (2024-11-14)
+
+### Dependency updates
+
+* **core-deps:** update dependency uuid to v11.0.3 ([#119](https://github.com/revue-org/revue-sample-thing/issues/119)) ([5ce4493](https://github.com/revue-org/revue-sample-thing/commit/5ce449308c6eaf37c490a76ba6737a4fa66d40fd))
+
+
+## [1.1.83](https://github.com/revue-org/revue-sample-thing/compare/v1.1.82...v1.1.83) (2024-11-14)
+
 ## [1.1.82](https://github.com/revue-org/revue-sample-thing/compare/v1.1.81...v1.1.82) (2024-11-12)
 
 ### Dependency updates

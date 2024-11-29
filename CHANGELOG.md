@@ -1,3 +1,21 @@
+## [1.1.91](https://github.com/revue-org/revue-sample-thing/compare/v1.1.90...v1.1.91) (2024-11-29)
+
+### Dependency updates
+
+* **core-deps:** update dependency prettier to v3.4.1 ([#128](https://github.com/revue-org/revue-sample-thing/issues/128)) ([ade8883](https://github.com/revue-org/revue-sample-thing/commit/ade8883b7ebc3e1ce2f481872f5f5dbfa03d93a4))
+
+
+## [1.1.91](https://github.com/revue-org/revue-sample-thing/compare/v1.1.90...v1.1.91) (2024-11-29)
+
+## [1.1.91](https://github.com/revue-org/revue-sample-thing/compare/v1.1.90...v1.1.91) (2024-11-29)
+
+### Dependency updates
+
+* **core-deps:** update dependency prettier to v3.4.1 ([#128](https://github.com/revue-org/revue-sample-thing/issues/128)) ([ade8883](https://github.com/revue-org/revue-sample-thing/commit/ade8883b7ebc3e1ce2f481872f5f5dbfa03d93a4))
+
+
+## [1.1.91](https://github.com/revue-org/revue-sample-thing/compare/v1.1.90...v1.1.91) (2024-11-29)
+
 ## [1.1.90](https://github.com/revue-org/revue-sample-thing/compare/v1.1.89...v1.1.90) (2024-11-29)
 
 ### Dependency updates

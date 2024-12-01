@@ -1,3 +1,23 @@
+## [1.1.93](https://github.com/revue-org/revue-sample-thing/compare/v1.1.92...v1.1.93) (2024-12-01)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/node to v22.10.1 ([#131](https://github.com/revue-org/revue-sample-thing/issues/131)) ([c1bf15b](https://github.com/revue-org/revue-sample-thing/commit/c1bf15b53f26610a476dfa84d5e9685bbb31f080))
+* **deps:** update docker/dockerfile docker tag to v1.12 ([#130](https://github.com/revue-org/revue-sample-thing/issues/130)) ([d773d7c](https://github.com/revue-org/revue-sample-thing/commit/d773d7cfdc7621c750aebddda8af1bfa4c0092f7))
+
+
+## [1.1.93](https://github.com/revue-org/revue-sample-thing/compare/v1.1.92...v1.1.93) (2024-12-01)
+
+## [1.1.93](https://github.com/revue-org/revue-sample-thing/compare/v1.1.92...v1.1.93) (2024-12-01)
+
+### Dependency updates
+
+* **core-deps:** update dependency @types/node to v22.10.1 ([#131](https://github.com/revue-org/revue-sample-thing/issues/131)) ([c1bf15b](https://github.com/revue-org/revue-sample-thing/commit/c1bf15b53f26610a476dfa84d5e9685bbb31f080))
+* **deps:** update docker/dockerfile docker tag to v1.12 ([#130](https://github.com/revue-org/revue-sample-thing/issues/130)) ([d773d7c](https://github.com/revue-org/revue-sample-thing/commit/d773d7cfdc7621c750aebddda8af1bfa4c0092f7))
+
+
+## [1.1.93](https://github.com/revue-org/revue-sample-thing/compare/v1.1.92...v1.1.93) (2024-12-01)
+
 ## [1.1.92](https://github.com/revue-org/revue-sample-thing/compare/v1.1.91...v1.1.92) (2024-11-30)
 
 ### Dependency updates
